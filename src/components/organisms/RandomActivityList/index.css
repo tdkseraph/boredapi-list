@@ -1,0 +1,89 @@
+.react-transition-group {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.project {
+  width: 30rem;
+  margin-top: 20px;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.switch-load {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.loading-icon {
+  font-size: x-large;
+}
+
+.ant-list-item {
+  display: flex !important;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 12px !important;
+  background: lightblue;
+  border-radius: 5px;
+  border-bottom: 1px solid #fff;
+  color: darkslategrey;
+  box-sizing: border-box;
+  margin: 0 1rem 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    width: 400px;
+  }
+}
+
+.example-exit.example-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.ant-list-item-content-single {
+  justify-content: space-between;
+  align-items: center;
+}
